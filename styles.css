@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#board-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(30, 20px);
+    gap: 2px;
+}
+
+#console {
+    width: 400px;
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-size: 0.9rem;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+
+
+.robot {
+    background-color: blue;
+}
+
+.target {
+    background-color: green;
+}
+
+.obstacle {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.playerInput {
+    display: flex;
+    flex-direction: column;
+}
+
+#commandInput {
+    width: 400px;
+    text-align: start;
+    height: 400px;
+}
+
+button,
+.custom-file-upload {
+    margin-top: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.scriptButtons {
+    width: 650px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scriptButtons #timer {
+    margin-top: 10px;
+
+}
+
+.scriptButtons button {
+    font-size: 1.15em;
+    background-color: transparent;
+    height: 40px;
+
+}
+
+
+.scriptButtons label {
+    height: 20px;
+
+}
+
+.promptButtom {
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+textarea {
+    resize: none;
+    width: 250px;
+    height: 100px;
+}
+
+.consoleText {
+    background-color: rgb(209, 237, 249);
+    height: 10%;
+    margin: 10px;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2em;
+
+}
+
+.error {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(85, 45, 45);
+    color: #fff;
+
+}
+
+li {
+    margin-top: 15px;
+}
+
+.playerInputObstacles {
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+#obstacle-count {
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
